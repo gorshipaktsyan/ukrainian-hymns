@@ -1,0 +1,50 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier", "simple-import-sort"],
+  "rules": {
+    "prettier/prettier": ["warn", { "endOfLine": "auto" }],
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["src/service-worker.js", "src/serviceWorkerRegistration.js"],
+      "rules": {
+        "no-undef": "off"
+      }
+    },
+    {
+      "files": ["**/*.js", "**/*.ts", "**/*.tsx"],
+      "rules": {
+        "simple-import-sort/imports": [
+          "warn",
+          {
+            "groups": [
+              ["^react$", "^next", "^[a-z]"],
+              ["^@"],
+              ["^~"],
+              ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+              ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+              ["^.+\\.s?css$"],
+              ["^\\u0000"]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
