@@ -1,9 +1,9 @@
 const russian = {
-  hymns: 'Гимны',
-  hymn: 'Гимн',
-  version: 'Версия',
+  hymns: 'Гімни',
+  hymn: 'Гімн',
+  version: 'Версія',
   language: 'ru',
-  noData: 'Нет данных',
+  noData: 'Дані відсутні',
   regExp: {
     onlyLetters: '[^а-яА-ЯёЁ]'
   },
@@ -30,27 +30,27 @@ const russian = {
     ]
   },
   navItems: {
-    hymns_1_800: 'Гимны 1-800',
-    alphabeticalIndex: 'Алфавитный указатель',
-    content: 'Содержание',
-    history: 'История',
+    hymns_1_800: 'Гімни 1-800',
+    alphabeticalIndex: 'Алфавітний покажчик',
+    content: 'Зміст',
+    history: 'Історія',
     bookmark: 'Закладки',
-    preface: 'Предисловие',
-    reference: 'Справка',
-    AboutTheApp: 'O приложении',
-    settings: 'Настройки'
+    preface: 'Передмова',
+    reference: 'Довідка',
+    AboutTheApp: 'Про застосунок',
+    settings: 'Налаштування'
   },
 
   search: {
-    searchByRussianNumber: 'Поиск по русскому  номеру',
-    searchByEnglishNumber: 'Поиск по английскому номеру',
-    searchByText: 'Поиск по тексту',
-    search: 'Поиск',
-    errorAlert: 'Соответствующий гимн не найден!'
+    searchByRussianNumber: 'Пошук за російським номером',
+    searchByEnglishNumber: 'Пошук за англійським номером',
+    searchByText: 'Пошук за текстом',
+    search: 'Пошук',
+    errorAlert: 'Помилка пошуку',
   },
 
   appBar: {
-    copyAlert: 'Ссылка на этот гимн скопирована.'
+    copyAlert: 'Посилання на цей гімн скопійовано',
   },
 
   about: {
@@ -213,11 +213,11 @@ const russian = {
   },
 
   settings: {
-    fontSize: 'Размер шрифта',
-    arrows: 'Стрелки',
-    off: 'Выкл',
+    fontSize: 'Розмір шрифту',
+    arrows: 'Стрілки',
+    off: 'Викл',
     on: 'Вкл',
-    searchByEnglishNumber: 'Поиск по английскому номеру'
+    searchByEnglishNumber: 'Пошук за англійським номером',
   }
 };
 
