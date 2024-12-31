@@ -1,6 +1,8 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import { Box } from '@mui/material';
+import { useDispatch } from 'react-redux';
+import { hymnsService } from '../../../services';
 
 import { setTitleId } from '../../../redux/slice/contentSlice';
 import { scrollToContentTittle } from '../../../utils';
@@ -20,32 +22,39 @@ function TitlesList() {
     dispatch(setTitleId(titleId === id ? '' : id));
     scrollToContentTittle(id);
   }
+  const hymns = hymnsService.get();
+
+  const titlesToShow = titles.filter((title) => {
+    return hymns.some((hymn) => hymn.isUkrainian && hymn.title === title._id);
+  });
 
   return (
     <StyledBox>
       <StyledList>
-        {titles.map((title, index) => (
-          <Box key={index}>
-            <ListItem
-              title={title?.name}
-              id={title._id}
-              list={titles}
-              index={index}
-              onTitleClick={handleTitleClick}
-              style={{
-                fontWeight: titleId === title._id && 'bold'
-              }}
-            />
-            {titleId === title._id && (
-              <SubTitlesList
-                titleId={titleId}
-                subtitleId={subtitleId}
-                dispatch={dispatch}
-                scrollToContentTittle={scrollToContentTittle}
+        {titlesToShow.map((title, index) => {
+          return (
+            <Box key={index}>
+              <ListItem
+                title={title?.name}
+                id={title._id}
+                list={titles}
+                index={index}
+                onTitleClick={handleTitleClick}
+                style={{
+                  fontWeight: titleId === title._id && 'bold'
+                }}
               />
-            )}
-          </Box>
-        ))}
+              {titleId === title._id && (
+                <SubTitlesList
+                  titleId={titleId}
+                  subtitleId={subtitleId}
+                  dispatch={dispatch}
+                  scrollToContentTittle={scrollToContentTittle}
+                />
+              )}
+            </Box>
+          );
+        })}
       </StyledList>
     </StyledBox>
   );

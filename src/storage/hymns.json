@@ -61,7 +61,8 @@
     "subtitle": 4,
     "first_letter": "О",
     "first_letter_chorus": "П",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 5,
@@ -5261,7 +5262,8 @@
     "subtitle": 135,
     "first_letter": "Х",
     "first_letter_chorus": "О",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 330,

@@ -15,7 +15,7 @@ class HymnsService {
 
   findSearchedHymns(inputtedNumbers, property) {
     const numbers = inputtedNumbers.split(',').map((num) => Number(num.trim()));
-    const foundHymns = hymns.filter((h) => numbers.includes(h[property]));
+    const foundHymns = hymns.filter((h) => h.isUkrainian && numbers.includes(h[property]));
     return foundHymns.map((h) => h.number);
   }
 
@@ -46,7 +46,7 @@ class HymnsService {
   }
 
   filterHymnsBySubId(subId) {
-    return hymns.filter((hymn) => hymn.subtitle === subId);
+    return hymns.filter((hymn) => hymn.subtitle === subId && hymn.isUkrainian);
   }
 
   sortHymns(hymnsArray, lg) {

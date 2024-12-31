@@ -17,6 +17,7 @@ const { StyledAlert } = StyledComponents;
 const { StyledForm, StyledSearchButton, StyledTextField } = SearchStyledComponents;
 
 function Search() {
+  console.log("I'm here")
   const [inputs, setInputs] = useState({
     rusNumber: '',
     engNumber: '',

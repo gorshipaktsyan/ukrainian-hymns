@@ -6,11 +6,14 @@ import ListItem from '../../components/ListItem';
 
 import FirstStringList from './FirstStringList';
 import StyledContentComponents from './styles';
+import { useDispatch } from 'react-redux';
 
 const { StyledSubList } = StyledContentComponents;
 
-function SubTitlesList({ titleId, subtitleId, dispatch, scrollToContentTittle }) {
+function SubTitlesList({ titleId, subtitleId, scrollToContentTittle }) {
   const filteredSubtitles = subtitlesService.filterSubsByTitleId(titleId);
+
+  const dispatch = useDispatch();
 
   function handleSubTitleClick(id) {
     dispatch(setSubtitleId(subtitleId === id ? '' : id));
