@@ -6,15 +6,15 @@ import Box from '@mui/material/Box';
 
 import { setCurrentNumber } from '../../../redux/slice/currentNumberSlice';
 import { hymnsService } from '../../../services';
-import { useAddToHistory, useSwipeNavigation } from '../../../utils/hooks';
+import { /*useAddToHistory*/ useSwipeNavigation } from '../../../utils/hooks';
 
 import Arrows from './Arrows';
 import HymnTitle from './HymnTitle';
-import HymnStyledComponents from './styles';
+//import HymnStyledComponents from './styles';
 
 import './index.scss';
 
-const { StyledDivider } = HymnStyledComponents;
+//const { StyledDivider } = HymnStyledComponents;
 
 function Hymn() {
   const { number } = useParams();
@@ -23,7 +23,7 @@ function Hymn() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  useAddToHistory(currentNumber);
+  //useAddToHistory(currentNumber);
 
   const { handleLeftSwipe, handleRightSwipe, handlers } = useSwipeNavigation({
     currentNumber,
@@ -34,7 +34,7 @@ function Hymn() {
     number && dispatch(setCurrentNumber(number.split(',').map(Number)));
   }, [number, dispatch]);
 
-  const foundHymns = hymnsService.findHymns(currentNumber);
+  const hymn = hymnsService.findHymn(currentNumber);
   return (
     <>
       <Box
@@ -42,22 +42,31 @@ function Hymn() {
         sx={{
           paddingBottom: '200px'
         }}
-        {...handlers}>
-        {foundHymns?.map((hymn, index) => {
-          return (
-            <Box key={index}>
-              <HymnTitle foundHymns={foundHymns} language={language} hymn={hymn} />
-              <Box dangerouslySetInnerHTML={{ __html: hymn?.html }} />
-              <Arrows
-                isAllowToUseArrows={isAllowToUseArrows}
-                isMobile={isMobile}
-                handleLeftSwipe={handleLeftSwipe}
-                handleRightSwipe={handleRightSwipe}
-              />
-              {index !== foundHymns.length - 1 && <StyledDivider />}
+        {...handlers}
+      >
+        <Box>
+          {hymn ? (
+            <HymnTitle language={language} hymn={hymn} />
+          ) : (
+            <Box
+              sx={{
+                position: 'fixed',
+                top: '53%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)'
+              }}
+            >
+              Гімн не перекладено
             </Box>
-          );
-        })}
+          )}
+          {hymn && <Box dangerouslySetInnerHTML={{ __html: hymn?.html }} />}
+          <Arrows
+            isAllowToUseArrows={isAllowToUseArrows}
+            isMobile={isMobile}
+            handleLeftSwipe={handleLeftSwipe}
+            handleRightSwipe={handleRightSwipe}
+          />
+        </Box>
       </Box>
     </>
   );

@@ -42,11 +42,11 @@ const russian = {
   },
 
   search: {
-    searchByRussianNumber: 'Пошук за українським номером',
+    searchByRussianNumber: 'Пошук за номером',
     searchByEnglishNumber: 'Пошук за англійським номером',
     searchByText: 'Пошук за текстом',
     search: 'Пошук',
-    errorAlert: 'Помилка пошуку'
+    errorAlert: 'Гімн не знайдено'
   },
 
   appBar: {
@@ -100,10 +100,10 @@ const russian = {
   },
 
   history: {
-    deleteHistory: 'Удалить историю',
-    dialog: 'Вы действительно хотите удалить всю историю?',
-    yes: 'да',
-    no: 'нет'
+    deleteHistory: 'Видалити історію',
+    dialog: 'Ви впевнені, що хочете видалити всю історію?',
+    yes: 'Так',
+    no: 'Ні'
   },
 
   preface: {

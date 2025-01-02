@@ -4,8 +4,8 @@ import { Divider, Slider, Switch } from '@mui/material';
 
 import {
   changeFontSize,
-  setIsAllowToUseArrows,
-  setIsEngSearchVisible
+  setIsAllowToUseArrows
+  //setIsEngSearchVisible
 } from '../../../redux/slice/settingsSlice';
 import { StyledComponents } from '../../styles';
 
@@ -15,7 +15,7 @@ const { StyledBox } = StyledComponents;
 const { StyledSetList, StyledSetListItem, StyledSetTpg, ArrowSetBox } = SettingsStyledComponents;
 
 function Settings() {
-  const { fontSize, isAllowToUseArrows, isEngSearchVisible, isMobile, language } = useSelector(
+  const { fontSize, isAllowToUseArrows, /*isEngSearchVisible,*/ isMobile, language } = useSelector(
     (state) => state.settings
   );
 
@@ -30,9 +30,9 @@ function Settings() {
     dispatch(setIsAllowToUseArrows(e.target.checked));
   }
 
-  function handleChangeEngSearch(e) {
-    dispatch(setIsEngSearchVisible(e.target.checked));
-  }
+  //function handleChangeEngSearch(e) {
+  //  dispatch(setIsEngSearchVisible(e.target.checked));
+  //}
 
   return (
     <StyledBox onTouchStart={(e) => e.stopPropagation()}>
@@ -62,15 +62,19 @@ function Settings() {
             </StyledSetListItem>
           </>
         )}
+        {/*
+
         <Divider sx={{ width: '350px', marginTop: '15px' }} />
-        <StyledSetListItem>
-          <StyledSetTpg>{language.settings.searchByEnglishNumber}</StyledSetTpg>
-          <ArrowSetBox>
-            <StyledSetTpg>{language.settings.off}</StyledSetTpg>
-            <Switch checked={isEngSearchVisible} onChange={handleChangeEngSearch}></Switch>
-            <StyledSetTpg>{language.settings.on}</StyledSetTpg>
-          </ArrowSetBox>
-        </StyledSetListItem>
+            <StyledSetListItem>
+    
+              <StyledSetTpg>{language.settings.searchByEnglishNumber}</StyledSetTpg>
+              <ArrowSetBox>
+                <StyledSetTpg>{language.settings.off}</StyledSetTpg>
+                <Switch checked={isEngSearchVisible} onChange={handleChangeEngSearch}></Switch>
+                <StyledSetTpg>{language.settings.on}</StyledSetTpg>
+              </ArrowSetBox>
+            </StyledSetListItem>
+           */}
       </StyledSetList>
     </StyledBox>
   );

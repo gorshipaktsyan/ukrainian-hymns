@@ -1,7 +1,7 @@
-export default function HymnTitle({ foundHymns, language, hymn }) {
+export default function HymnTitle({ language, hymn }) {
   return (
     <div className="hymnTitle">
-      {foundHymns.length > 1 && (
+      {hymn && (
         <div
           dangerouslySetInnerHTML={{
             __html: `${language.hymn} ${hymn.number}<sup>${hymn.sign}</sup>`

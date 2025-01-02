@@ -6,16 +6,16 @@ class HymnsService {
   }
 
   findHymn(currentNumber) {
-    return hymns.find((h) => h.number === currentNumber);
+    return hymns.find((h) => h.isUkrainian && h.number === Number(currentNumber));
   }
 
   findHymns(currentNumbers) {
-    return currentNumbers.map((number) => hymns.find((h) => h.number === number));
+    return currentNumbers.map((number) => hymns.find((h) => h.isUkrainian && h.number === number));
   }
 
   findSearchedHymns(inputtedNumbers, property) {
     const numbers = inputtedNumbers.split(',').map((num) => Number(num.trim()));
-    const foundHymns = hymns.filter((h) => h.isUkrainian && numbers.includes(h[property]));
+    const foundHymns = hymns.filter((h) => numbers.includes(h[property]));
     return foundHymns.map((h) => h.number);
   }
 

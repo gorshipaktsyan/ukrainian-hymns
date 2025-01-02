@@ -1,9 +1,9 @@
 import {
   About,
-  AlphabeticalIndex,
+  //AlphabeticalIndex,
   Bookmarks,
   Content,
-  History,
+  //History,
   Hymn,
   Preface,
   Reference,
@@ -25,10 +25,10 @@ const routes = [
     element: <Settings />
   },
   { path: '/about', element: <About /> },
-  {
-    path: '/alphabetical',
-    element: <AlphabeticalIndex />
-  },
+  //{
+  //  path: '/alphabetical',
+  //  element: <AlphabeticalIndex />
+  //},
   {
     path: '/bookmark',
     element: <Bookmarks />
@@ -37,10 +37,10 @@ const routes = [
     path: '/content',
     element: <Content />
   },
-  {
-    path: '/history',
-    element: <History />
-  },
+  //{
+  //  path: '/history',
+  //  element: <History />
+  //},
   { path: '/preface', element: <Preface /> },
   { path: '/reference', element: <Reference /> }
 ];

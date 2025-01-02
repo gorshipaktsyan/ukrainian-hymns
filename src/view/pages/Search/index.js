@@ -17,7 +17,6 @@ const { StyledAlert } = StyledComponents;
 const { StyledForm, StyledSearchButton, StyledTextField } = SearchStyledComponents;
 
 function Search() {
-  console.log("I'm here")
   const [inputs, setInputs] = useState({
     rusNumber: '',
     engNumber: '',
@@ -112,20 +111,23 @@ function Search() {
               }}
             />
           )}
-          <StyledTextField
-            label={language.search.searchByText}
-            value={inputs.searchedText}
-            inputProps={{
-              inputMode: 'search'
-            }}
-            onChange={(e) => {
-              setInputs({
-                rusNumber: '',
-                engNumber: '',
-                searchedText: e.target.value
-              });
-            }}
-          />
+          {/*
+             *<StyledTextField
+              label={language.search.searchByText}
+              value={inputs.searchedText}
+              inputProps={{
+                inputMode: 'search'
+              }}
+              onChange={(e) => {
+                setInputs({
+                  rusNumber: '',
+                  engNumber: '',
+                  searchedText: e.target.value
+                });
+              }}
+            />
+  
+             */}
           <StyledSearchButton type="submit" variant="contained" onClick={handleSubmit}>
             <span style={{ fontSize: '16px' }}>{language.search.search}</span>
           </StyledSearchButton>
@@ -135,7 +137,8 @@ function Search() {
         anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
         open={errorAlert}
         onClose={() => setErrorAlert(false)}
-        autoHideDuration={2000}>
+        autoHideDuration={2000}
+      >
         <StyledAlert onClose={() => setErrorAlert(false)} severity="error">
           {language.search.errorAlert}
         </StyledAlert>
