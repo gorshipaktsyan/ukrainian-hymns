@@ -78,7 +78,8 @@
     "subtitle": 4,
     "first_letter": "С",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 6,
@@ -206,7 +207,8 @@
     "subtitle": 12,
     "first_letter": "М",
     "first_letter_chorus": "У",
-    "sign": "*"
+    "sign": "*",
+    "isUkrainian": true
   },
   {
     "_id": 14,
@@ -382,7 +384,8 @@
     "subtitle": 18,
     "first_letter": "Б",
     "first_letter_chorus": "О",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 25,
@@ -622,7 +625,8 @@
     "subtitle": 24,
     "first_letter": "О",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 40,
@@ -814,7 +818,8 @@
     "subtitle": 28,
     "first_letter": "К",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 52,
@@ -1342,7 +1347,8 @@
     "subtitle": 35,
     "first_letter": "К",
     "first_letter_chorus": null,
-    "sign": "*"
+    "sign": "*",
+    "isUkrainian": true
   },
   {
     "_id": 85,
@@ -1422,7 +1428,8 @@
     "subtitle": 36,
     "first_letter": "Г",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 90,
@@ -1470,7 +1477,8 @@
     "subtitle": 37,
     "first_letter": "С",
     "first_letter_chorus": null,
-    "sign": "*"
+    "sign": "*",
+    "isUkrainian": true
   },
   {
     "_id": 93,
@@ -2206,7 +2214,8 @@
     "subtitle": 49,
     "first_letter": "У",
     "first_letter_chorus": "В",
-    "sign": "*"
+    "sign": "*",
+    "isUkrainian": true
   },
   {
     "_id": 139,
@@ -2574,7 +2583,8 @@
     "subtitle": 54,
     "first_letter": "З",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 162,
@@ -2670,7 +2680,8 @@
     "subtitle": 54,
     "first_letter": "І",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 168,
@@ -2878,7 +2889,8 @@
     "subtitle": 55,
     "first_letter": "Б",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 181,
@@ -3054,7 +3066,8 @@
     "subtitle": 64,
     "first_letter": "Р",
     "first_letter_chorus": null,
-    "sign": "*"
+    "sign": "*",
+    "isUkrainian": true
   },
   {
     "_id": 192,
@@ -3166,7 +3179,8 @@
     "subtitle": 67,
     "first_letter": "В",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 199,
@@ -3582,7 +3596,8 @@
     "subtitle": 77,
     "first_letter": "М",
     "first_letter_chorus": "Х",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 225,
@@ -4366,7 +4381,8 @@
     "subtitle": 99,
     "first_letter": "О",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 274,
@@ -4494,7 +4510,8 @@
     "subtitle": 106,
     "first_letter": "І",
     "first_letter_chorus": "Х",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 282,
@@ -4926,7 +4943,8 @@
     "subtitle": 122,
     "first_letter": "Ч",
     "first_letter_chorus": "Х",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 309,
@@ -5471,7 +5489,8 @@
     "subtitle": 138,
     "first_letter": "З",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 343,
@@ -5663,7 +5682,8 @@
     "subtitle": 144,
     "first_letter": "С",
     "first_letter_chorus": "О",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 355,
@@ -5887,7 +5907,8 @@
     "subtitle": 147,
     "first_letter": "О",
     "first_letter_chorus": null,
-    "sign": "*"
+    "sign": "*",
+    "isUkrainian": true
   },
   {
     "_id": 369,
@@ -6383,7 +6404,8 @@
     "subtitle": 159,
     "first_letter": "Г",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 400,
@@ -6799,7 +6821,8 @@
     "subtitle": 167,
     "first_letter": "І",
     "first_letter_chorus": "Н",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 426,
@@ -7727,7 +7750,8 @@
     "subtitle": 205,
     "first_letter": "Н",
     "first_letter_chorus": "Т",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 484,
@@ -7839,7 +7863,8 @@
     "subtitle": 208,
     "first_letter": "Б",
     "first_letter_chorus": null,
-    "sign": "*"
+    "sign": "*",
+    "isUkrainian": true
   },
   {
     "_id": 491,
@@ -8031,7 +8056,8 @@
     "subtitle": 220,
     "first_letter": "Г",
     "first_letter_chorus": null,
-    "sign": "*"
+    "sign": "*",
+    "isUkrainian": true
   },
   {
     "_id": 503,
@@ -8319,7 +8345,8 @@
     "subtitle": 231,
     "first_letter": "С",
     "first_letter_chorus": "О",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 521,
@@ -8511,7 +8538,8 @@
     "subtitle": 240,
     "first_letter": "Щ",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 533,
@@ -10127,7 +10155,8 @@
     "subtitle": 290,
     "first_letter": "Н",
     "first_letter_chorus": "В",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 634,
@@ -10255,7 +10284,8 @@
     "subtitle": 297,
     "first_letter": "А",
     "first_letter_chorus": "А",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 642,
@@ -10335,7 +10365,8 @@
     "subtitle": 301,
     "first_letter": "В",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 647,
@@ -10991,7 +11022,8 @@
     "subtitle": 338,
     "first_letter": "Х",
     "first_letter_chorus": "Х",
-    "sign": "*"
+    "sign": "*",
+    "isUkrainian": true
   },
   {
     "_id": 688,
@@ -11247,7 +11279,8 @@
     "subtitle": 347,
     "first_letter": "Б",
     "first_letter_chorus": "Т",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 704,
@@ -11327,7 +11360,8 @@
     "subtitle": 347,
     "first_letter": "Є",
     "first_letter_chorus": "О",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 709,
@@ -12063,7 +12097,8 @@
     "subtitle": 367,
     "first_letter": "В",
     "first_letter_chorus": "О",
-    "sign": "*"
+    "sign": "*",
+    "isUkrainian": true
   },
   {
     "_id": 755,
@@ -12175,7 +12210,8 @@
     "subtitle": 369,
     "first_letter": "Ц",
     "first_letter_chorus": "П",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 762,
@@ -12287,7 +12323,8 @@
     "subtitle": 370,
     "first_letter": "В",
     "first_letter_chorus": "Г",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 769,
@@ -12303,7 +12340,8 @@
     "subtitle": 371,
     "first_letter": "Н",
     "first_letter_chorus": "М",
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 770,
@@ -12319,7 +12357,8 @@
     "subtitle": 371,
     "first_letter": "Я",
     "first_letter_chorus": null,
-    "sign": "*"
+    "sign": "*",
+    "isUkrainian": true
   },
   {
     "_id": 771,
@@ -12335,7 +12374,8 @@
     "subtitle": 371,
     "first_letter": "О",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 772,
@@ -12351,7 +12391,8 @@
     "subtitle": 371,
     "first_letter": "С",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 773,
@@ -12543,7 +12584,8 @@
     "subtitle": 375,
     "first_letter": "Я",
     "first_letter_chorus": null,
-    "sign": ""
+    "sign": "",
+    "isUkrainian": true
   },
   {
     "_id": 785,
